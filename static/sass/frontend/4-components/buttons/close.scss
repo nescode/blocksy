@@ -1,0 +1,32 @@
+.ct-close-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: var(--position, relative);
+	z-index: var(--z-index, initial);
+	top: var(--top, initial);
+	right: var(--right, -10px);
+	cursor: pointer;
+	margin-left: auto;
+	width: var(--closeButtonSize, 33px);
+	height: var(--closeButtonSize, 33px);
+	border-radius: var(--closeButtonRadius, 5px );
+	background: var(--closeButtonBackground, rgba(0, 0, 0, 0.5));
+	transition: background 0.3s ease-out;
+
+	--icon-size: 12px;
+	--icon-color: rgba(255, 255, 255, 0.7);
+
+	svg {
+		transition: transform 0.2s ease-out;
+	}
+
+	&:hover {
+		background: var(--closeButtonHoverBackground, rgba(0, 0, 0, 0.5));
+
+		svg {
+			transform: rotate(90deg);
+			fill: var(--icon-hover-color, #fff);
+		}
+	}
+}

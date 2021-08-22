@@ -1,0 +1,20 @@
+body:not(.ct-loading) {
+	.ct-panel {
+		transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+	}
+}
+
+.ct-panel {
+	// display: flex;
+	// flex-direction: column;
+	position: fixed;
+	z-index: 999999;
+	top: calc(var(--admin-bar, 0px));
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	content-visibility: auto;
+}

@@ -1,0 +1,29 @@
+// this method is not working in Safari
+:target,
+.elementor-menu-anchor {
+	// 1. No sticky -- 0px
+	scroll-margin-top: calc(
+		var(--admin-bar, 0px) + var(--frame-size, 0px) +
+			var(--scroll-margin-top-offset, 0px)
+	);
+}
+
+[data-header*='sticky'] {
+	// 3. Sticky present and init -- --headerStickyHeight
+	--scroll-margin-top-offset: calc(
+		(
+				var(--headerStickyHeight, var(--headerHeight, 0px)) *
+					var(--has-transparent-header) *
+					(var(--stickyShrink, 100) / 100)
+			) + var(--headerStickyHeight, var(--headerHeight, 0px)) *
+			(1 - var(--has-transparent-header))
+	);
+}
+
+[data-header*='sticky:shrink'] {
+	// 3. Sticky present and init -- --headerStickyHeight
+	--scroll-margin-top-offset: calc(
+		var(--headerStickyHeight, var(--headerHeight, 0px)) *
+			(var(--stickyShrink, 100) / 100)
+	);
+}

@@ -1,0 +1,106 @@
+// block widgets
+.ct-option-widget-area {
+	margin-top: 15px;
+}
+
+// block widgets panel
+#customize-controls .control-section-sidebar {
+	li.customize-control-sidebar_block_editor {
+		--ui-padding: 0;
+		margin-top: -7px;
+	}
+}
+
+
+// classic widgets
+.widget-inside {
+	.ct-options-panel {
+		margin-bottom: 20px;
+	}
+
+	.ct-options-root .ct-control {
+		position: relative;
+		margin-left: -15px;
+		margin-right: -15px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.ct-control {
+		margin-top: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		&[data-design="inline"] {
+			display: flex;
+			flex-wrap: wrap;
+			> header {
+				flex: 0 0 45%;
+				max-width: 45%
+			}
+
+			> section {
+				flex: 0 0 55%;
+				max-width: 55%;
+				text-align: right;
+			}
+		}
+
+		&[data-design="block"] {
+			> header {
+				&:not(:empty) {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+
+	.ct-option-description {
+		margin-top: 15px;
+		font-size: 12px;
+		font-style: italic;
+		color: rgba(85, 93, 102, 0.8);
+	}
+
+	.ct-tabs {
+		--tabs-container-margin: 25px -15px 0 -15px;
+
+		li.active:after {
+			background: #fff;
+		}
+	}
+
+	.ct-current-tab {
+		padding: 0 15px;
+	}
+}
+
+
+// customizer widgets
+.customize-pane-child {
+
+	.widget-inside {
+		padding: 1px 15px 15px 15px;
+		// .ct-control {
+		// 	margin-left: -10px;
+		// 	margin-right: -10px;
+		// }
+	}
+}
+
+// widgets list
+#widget-list > div[id*="blocksy_ct"] {
+	h3 {
+		position: relative;
+
+		&:before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 3px;
+			height: 100%;
+			background: #0085ba;
+		}
+	}
+}

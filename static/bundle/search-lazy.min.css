@@ -1,0 +1,8 @@
+/**
+ * Blocksy - v1.8.5
+ * 
+ * Copyright (c) 2021
+ * Licensed GPLv2+
+ */
+
+@media (prefers-reduced-motion: no-preference){.ct-searching .search-submit svg{opacity:0}.ct-searching .search-submit [data-loader]{opacity:1;visibility:visible;animation-play-state:running}}.ct-search-results{position:var(--position, absolute);z-index:1;top:-15px;left:-15px;width:var(--width, calc(100% + 30px));padding-top:calc(var(--form-field-height, 40px) + 14px);border-radius:5px;background:var(--search-dropdown-background, #fff);box-shadow:var(--search-dropdown-box-shadow, 0px 50px 70px 0px rgba(210,213,218,0.4))}.ct-search-results a{display:flex;align-items:center;font-size:14px;line-height:1.4;font-weight:500;padding:var(--items-padding, 16px)}.ct-search-results a:not(:last-child){border-bottom:var(--items-divider, 1px dashed rgba(0,0,0,0.05))}.ct-search-results a .ct-image-container{flex:0 0 var(--search-image-size, 45px);max-width:var(--search-image-size, 45px);align-self:flex-start;border-radius:2px;--image-spacing: 15px;margin-right:var(--image-spacing)}.ct-search-results.ct-slide,.ct-search-results.ct-fade-leave,.ct-search-results.ct-fade-leave-active,.ct-search-results.ct-fade-enter,.ct-search-results.ct-fade-enter-active{transition:height 0.3s ease, opacity 0.3s ease}.ct-search-results.ct-fade-enter{opacity:0}.ct-search-results.ct-fade-enter-active{opacity:1}.ct-search-results.ct-fade-leave{opacity:1}.ct-search-results.ct-fade-leave-active{opacity:0}

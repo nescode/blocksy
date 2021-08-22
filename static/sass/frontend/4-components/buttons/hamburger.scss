@@ -1,0 +1,72 @@
+.ct-trigger {
+	--icon-transition: none;
+
+	rect {
+		transform-origin: 50% 50%;
+		transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	}
+
+	// type 2
+	&[data-type="type-2"] rect {
+		&:nth-child(1) {
+			width: 10px;
+		}
+
+		&:nth-child(3) {
+			width: 15px;
+		}
+	}
+
+	// type 3
+	&[data-type="type-3"] rect {
+		&:nth-child(1), &:nth-child(3) {
+			width: 12px;
+		}
+
+		&:nth-child(1) {
+			x: 6px;
+		}
+	}
+}
+
+// hover action
+.ct-header-trigger:hover {
+
+	[data-type="type-2"], [data-type="type-3"] {
+		rect {
+			&:nth-child(1), &:nth-child(3) {
+				width: 18px;
+			}
+		}
+	}
+
+	[data-type="type-3"] rect {
+		&:nth-child(1) {
+			x: 0px;
+		}
+	}
+}
+
+// active action
+.ct-header-trigger.active {
+
+	rect {
+		&:nth-child(1), &:nth-child(3) {
+			width: 18px;
+			y: 6.15px;
+		}
+
+		&:nth-child(1) {
+			x: 0px;
+			transform: rotate(45deg);
+		}
+
+		&:nth-child(2) {
+			opacity: 0;
+		}
+
+		&:nth-child(3) {
+			transform: rotate(-45deg);
+		}
+	}
+}

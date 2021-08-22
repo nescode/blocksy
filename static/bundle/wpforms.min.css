@@ -1,0 +1,8 @@
+/**
+ * Blocksy - v1.8.5
+ * 
+ * Copyright (c) 2021
+ * Licensed GPLv2+
+ */
+
+.wpforms-container:not(.wpforms-container-full) .wpforms-field-label{font-weight:600}.wpforms-container:not(.wpforms-container-full) .wpforms-field-radio,.wpforms-container:not(.wpforms-container-full) .wpforms-field-checkbox{--top: 2px}.wpforms-container:not(.wpforms-container-full) .wpforms-field-radio ul,.wpforms-container:not(.wpforms-container-full) .wpforms-field-checkbox ul{padding:0}.wpforms-container:not(.wpforms-container-full) .wpforms-field-sublabel{font-style:italic}.wpforms-container:not(.wpforms-container-full) .wpforms-field-number-slider input[type='range']{-webkit-appearance:none;height:4px;outline:none;margin:10px 0 10px;border-radius:5px;background:var(--form-field-border-initial-color)}.wpforms-container:not(.wpforms-container-full) .wpforms-field-number-slider input[type='range']::-webkit-slider-thumb,.wpforms-container:not(.wpforms-container-full) .wpforms-field-number-slider input[type='range']::-moz-range-thumb{-webkit-appearance:none;cursor:pointer;height:16px;width:16px;border-radius:100%;border:none;background:var(--paletteColor1)}.wpforms-container:not(.wpforms-container-full) .wpforms-field-number-slider .wpforms-field-number-slider-hint{font-size:13px}div.wpforms-container.inline-fields{overflow:visible}@media (max-width: 689.98px){div.wpforms-container.inline-fields form{display:flex;flex-direction:column;text-align:center}div.wpforms-container.inline-fields form .wpforms-field-container,div.wpforms-container.inline-fields form .wpforms-submit-container{width:100%}div.wpforms-container.inline-fields form .wpforms-field{padding-right:0}div.wpforms-container.inline-fields form .wpforms-field input{text-align:center}}

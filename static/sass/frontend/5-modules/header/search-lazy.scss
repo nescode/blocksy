@@ -1,0 +1,100 @@
+#search-modal {
+	--vertical-alignment: center;
+
+	form {
+		width: 100%;
+		max-width: var(--max-width, 800px);
+		margin-left: auto;
+		margin-right: auto;
+
+		@include media-breakpoint-down(md) {
+			--max-width: 90%;
+		}
+	}
+
+	// input field
+	// input {
+	// 	--has-classic-forms: var(--false);
+
+	// 	--form-text-initial-color: var(--linkInitialColor);
+	// 	--form-text-focus-color: var(--linkInitialColor);
+	// 	--form-field-border-width: 0 0 1px 0;
+	// 	--form-field-border-initial-color: rgba(255, 255, 255, 0.2);
+
+	// 	@include media-breakpoint-down(sm) {
+	// 		--form-font-size: 22px;
+	// 		--form-field-height: 70px;
+	// 		--form-field-padding: 0px;
+	// 		margin-bottom: 25px;
+	// 	}
+
+	// 	@include media-breakpoint-up(md) {
+	// 		--form-font-size: 35px;
+	// 		--form-field-height: 90px;
+	// 		--form-field-padding: 0 50px 0 0;
+	// 		margin-bottom: 35px;
+	// 	}
+	// }
+
+	// submit button
+	button {
+		--icon-color: rgba(255, 255, 255, 0.7);
+		--icon-focus-color: #fff;
+		--icon-size: calc(100% / 3);
+		--search-button-border-radius: 100%;
+		--search-button-background: var(--paletteColor1);
+		--search-button-focus-background: var(--paletteColor1);
+
+		@include media-breakpoint-down(sm) {
+			--search-button-size: 40px;
+			top: calc(35px - 20px);
+		}
+
+		@include media-breakpoint-up(md) {
+			--search-button-size: 48px;
+			top: calc(45px - 24px);
+		}
+
+		[data-loader] {
+			--loaderColor: #fff;
+		}
+	}
+
+	// search results
+	.ct-search-results {
+		display: grid;
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+		padding-top: 0;
+
+		--position: static;
+		--width: 100%;
+		--search-dropdown-box-shadow: none;
+		--search-dropdown-background: transparent;
+
+		--items-padding: 0;
+		--items-divider: none;
+
+		@include media-breakpoint-up(md) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.ct-image-container {
+			--image-spacing: 5%;
+
+			@include media-breakpoint-down(sm) {
+				--search-image-size: 15%;
+			}
+
+			@include media-breakpoint-up(md) {
+				--search-image-size: 20%;
+			}
+		}
+
+		// show more button
+		.ct-search-more {
+			grid-column: 1/-1;
+			justify-content: center;
+		}
+	}
+}

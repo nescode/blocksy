@@ -1,0 +1,23 @@
+// [data-layout*='grid'] {
+// 	@include media-breakpoint-only(md) {
+// 		--grid-template-columns: repeat(2, 1fr);
+// 	}
+// }
+
+// @include media-breakpoint-up(lg) {
+// 	[data-layout='grid:columns-2'] {
+// 		--grid-template-columns: repeat(2, 1fr);
+// 	}
+
+// 	[data-layout='grid:columns-3'] {
+// 		--grid-template-columns: repeat(3, 1fr);
+// 	}
+
+// 	[data-layout='grid:columns-4'] {
+// 		--grid-template-columns: repeat(4, 1fr);
+// 	}
+
+// 	[data-layout='grid:columns-5'] {
+// 		--grid-template-columns: repeat(5, 1fr);
+// 	}
+// }

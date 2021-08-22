@@ -1,0 +1,8 @@
+/**
+ * Blocksy - v1.8.5
+ * 
+ * Copyright (c) 2021
+ * Licensed GPLv2+
+ */
+
+.entry-content>.elementor{--default-editor: var(--false)}.ct-elementor-default-template .site-main .elementor-top-section:not(.ct-section-stretched){margin-left:var(--has-wide, auto);margin-right:var(--has-wide, auto);width:var(--block-width, var(--container-width));max-width:var(--block-max-width, var(--container-max-width))}section.elementor-section.elementor-section-boxed>.elementor-container{width:var(--block-width, var(--container-width));max-width:var(--block-max-width, var(--container-max-width))}[data-elementor-type] p:last-child{--contentSpacing: 0px}.elementor-select-wrapper select{background-image:none}.elementor-search-form__input{--form-field-height: auto}.elementor-search-form__submit{--buttonShadow: none;--buttonTransform: none}:root{--e-global-color-blocksy_palette_1: var(--paletteColor1);--e-global-color-blocksy_palette_2: var(--paletteColor2);--e-global-color-blocksy_palette_3: var(--paletteColor3);--e-global-color-blocksy_palette_4: var(--paletteColor4);--e-global-color-blocksy_palette_5: var(--paletteColor5);--e-global-color-blocksy_palette_6: var(--paletteColor6);--e-global-color-blocksy_palette_7: var(--paletteColor7);--e-global-color-blocksy_palette_8: var(--paletteColor8)}

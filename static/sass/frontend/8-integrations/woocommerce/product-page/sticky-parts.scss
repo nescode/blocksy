@@ -1,0 +1,11 @@
+.sticky-summary .entry-summary,
+.sticky-gallery .woocommerce-product-gallery {
+	@include media-breakpoint-up(lg) {
+		align-self: flex-start;
+		position: sticky;
+		top: calc(
+			50px + var(--admin-bar, 0px) + var(--headerStickyHeight, 0px) *
+				(var(--stickyShrink, 100) / 100)
+		);
+	}
+}

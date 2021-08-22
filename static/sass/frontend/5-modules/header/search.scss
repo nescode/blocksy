@@ -1,0 +1,26 @@
+#search-modal {
+
+	// input field
+	input {
+		--has-classic-forms: var(--false);
+
+		--form-text-initial-color: var(--linkInitialColor);
+		--form-text-focus-color: var(--linkInitialColor);
+		--form-field-border-width: 0 0 1px 0;
+		--form-field-border-initial-color: rgba(255, 255, 255, 0.2);
+
+		@include media-breakpoint-down(sm) {
+			--form-font-size: 22px;
+			--form-field-height: 70px;
+			--form-field-padding: 0px;
+			margin-bottom: 25px;
+		}
+
+		@include media-breakpoint-up(md) {
+			--form-font-size: 35px;
+			--form-field-height: 90px;
+			--form-field-padding: 0 50px 0 0;
+			margin-bottom: 35px;
+		}
+	}
+}
